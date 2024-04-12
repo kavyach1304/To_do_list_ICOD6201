@@ -1,90 +1,40 @@
- To_do_list_ICOD6201
-<html>
+## Title: CodTech IT Solutions Internship - Task Documentation: To-Do List Web Development Internship
 
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+### Introduction
+This documentation provides a detailed explanation of the task assigned during the CodTech IT Solutions internship program. The task is based on To-Do List Web Application using CSS , HTML and Javascript . This documentation will cover the implementation details , description and insights into the programming technique utilized. 
 
-</head>
-<body>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-md-5 shadow-lg p-3 mb-5 bg-white rounded">
-                <h1> TO DO List</h1>
-                <input type="text" class="form-control" id="taskname">
-                <button class="btn btn-success" onclick="addtolist()">ADD</button>
-                <div id="mytodo" class="text-center">
+### Intern Information
+- **Intern Name**: Cheeti Kavya
+- **Intern ID**: ICOD6201
 
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+### Task Description
+The objective of this internship was to develop a web-based To-Do List application. The application allows users to add tasks and delete tasks. Cheeti Kavya successfully implemented the required features and functionalities within the specified project timeline.
 
-</html>
-<style>
-    body{
-    background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
-}
-.col-md-5{
-    margin-top: 150px !important;
-    background-color: white;
-}
-h1{
-    text-align: center;
-    font-weight: bolder !important;
-    margin: 20px !important;
-}
-button{
-    margin-left: 10px !important;
-}
-input{
-    display: inline !important;
-    border: 3px solid black !important;
-    width: 85% !important;
-}
-li{
-    list-style-type: none;
-    font-size: 20px;
-    text-align: center;
-    width: 70%;
-    display: inline;
-    margin: 10px;
-}
-i{
-    color: red;
-    margin: 10px;
-}
-</style>
-<script>
-    function addtolist()
- {
-    var taskname = document.getElementById('taskname').value 
-    var tododiv = document.getElementById('mytodo')
-    var newtodoitem = document.createElement('div')
-    var todoname = document.createElement('li')
-    todoname.innerHTML = taskname
-    var deletebtn = document.createElement('i')
-    deletebtn.classList.add('far')
-    deletebtn.classList.add('fa-trash-alt')
+### Implementation
+#### HTML Structure
+The HTML structure defines the layout of the To-Do List application:
+- Utilizes Bootstrap for responsive design.
+- Includes input field for task entry and buttons for task manipulation.
+- Displays the list of tasks within a designated container.
 
-    newtodoitem.appendChild(todoname)
-    newtodoitem.appendChild(deletebtn)
+#### CSS Styling
+Custom CSS styles were applied to enhance the visual presentation of the application:
+- Sets background gradient and styles elements for consistent appearance.
 
-    tododiv.appendChild(newtodoitem)
- }
- var tododiv = document.getElementById('mytodo')
- tododiv.addEventListener('click',deleteitem)
- 
+#### JavaScript Functionality
+Cheeti Kavya implemented JavaScript code to add dynamic functionality to the application:
+- **`addtolist()` Function**:
+  - Retrieves task input, creates HTML elements for task representation, and appends them to the task list.
 
-function deleteitem(e)
-{
-    const element = e.target
-    if(element.classList[0]=='far')
-    {
-        element.parentElement.remove()
-    }
-}
-</script>
+- **Event Listeners**:
+  - Attached to handle task deletion upon user interaction.
+
+
+### Conclusion
+In conclusion, the task assigned to Cheeti Kavya during the CodTech IT Solutions internship program involved making a To Do List using CSS , HTML and Javascript. The documentation provide you the implementation details , description and insights into the programming technique utilized. Cheeti Kavya, with the intern ID ICOD6201, has effectively completed this task as part of the internship program.
+
+
+---
+
+This concludes the documentation for the task "TO DO LIST" assigned during teh CodTech IT Solutions internship program.
